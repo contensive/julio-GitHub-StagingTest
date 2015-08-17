@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="masterTemplate" content="/masters/master-template.html">
+<title>PerformanceCloud by Weave</title>
+
+<!--<link href="css/styles.css" rel="stylesheet" type="text/css" />-->
+<link href="css/ferre_styles.css" rel="stylesheet" type="text/css" />
+<link href="css/ferre_custom.css" rel="stylesheet" type="text/css" />
+<link href="css/redactor.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.dropdown.css" type="text/css" rel="stylesheet"  />
+<link rel="stylesheet" href="css/hcolumns.css" type="text/css">
+<!--[if IE]> <link href="css/ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+<!--[if IE]> <link href="css/ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.orderBars.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.sortable.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.resizable.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.uniform.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.autotab.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.select2.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.ibutton.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine.js"></script>
+
+<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.validate.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fileTree.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.sourcerer.js"></script>
+
+<script type="text/javascript" src="js/plugins/others/jquery.fullcalendar.js"></script>
+<script type="text/javascript" src="js/plugins/others/jquery.elfinder.js"></script>
+<script type="text/javascript" src="js/plugins/others/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="js/files/bootstrap.js"></script>
+<script type="text/javascript" src="js/files/functions.js"></script>
+<script type="text/javascript" src="js/ferre/backoffice.js"></script>
+
+<script type="text/javascript">
+
+function showpin()
+
+{
+
+document.getElementById("pin-view").style.display = 'block';
+document.getElementById("list-view").style.display = 'none';
+
+}
+function showtable()
+
+{
+
+document.getElementById("pin-view").style.display = 'none';
+document.getElementById("list-view").style.display = 'block';
+
+}
+
+
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.tipN').fancybox({
+			scrolling: 'no',
+			padding: 10,
+			autoDimensions: true
+		});
+	});
+</script>
+
+
+</head>
+
+<body>
+<!-- Top line begins -->
+<div id="content">
+<div class="fixed_width">
+    <!-- Top Page Information -->			
+            <div class="pageTop">
+			    <span class="header-box-left">
+						<ul id="header-box-left-nav">
+						    <li><span class="app_logo"><img src="images/content/verify-title-icon.png"><!-- Image Here --></span></li>						
+							<li><span class="app_title">Verify</span></li>
+							<li><span class="app_descr">Verify™ is a sophisticated application enabling you to organize, document and report faculty credentials and qualifications.</span></li>
+						</ul>
+			    </span>
+ 			  <span class="header-box-right">
+						<ul id="header-box-right-nav">
+							<li style="dsplay:none;"><a title="" onclick="showpin()"><img src="images/content/thum.png"></a></li>
+							<li style="dsplay:none;"><a title="" onclick="showtable()"><img src="images/content/list.png"></a></li>
+						    <li id="advanced_search"><a href="#"><img src="images/content/advanced-search.png"></a></li>						
+							<li id="search-input">
+								<div class="searchLine no-top width300">
+									<form action="" id="gen_search_box">
+										<input type="text" placeholder="Enter search text..." class="" name="faculty_search" autocomplete="off">
+										<button value="" name="find" type="submit"><span class="icos-search"></span></button>
+									</form>
+								</div>
+						    </li>
+
+						</ul>
+			  </span>
+					<form id="search_cred_form" style="display:none">
+						<ul class="advanced-search search_cred_right" style="display:block;">
+							<li>
+								<div class="search-header">
+									Faculty ID
+								</div>
+								Contains
+								<input type="text" name="faculty_id" id="faculty_id"/>
+							</li>
+							<li>
+								<div class="search-header">
+									Degree
+								</div>
+								Contains
+								<select name="faculty_degree" class="styled ml30" id="faculty_degree">
+									<option value="">Select</option>
+								</select>
+							</li>
+							<li>
+								<div class="search-header">
+									Courses Aligned
+								</div>
+								Contains
+								<select name="faculty_course" class="styled ml30" id="faculty_course">
+										<option value="">Select</option>
+										<option value="Yes">Yes</option>
+										<option value="No">No</option>										
+										<option value="Pending">Pending</option>										
+								</select> 
+							</li>
+							<li>
+								<div class="search-header">
+									Documents
+								</div>
+								Contains
+								<select name="faculty_document" class="styled ml30" id="faculty_document">
+										<option value="">Select</option>
+										<option value="Yes">Yes</option>
+										<option value="No">No</option>										
+										<option value="Pending">Pending</option>											
+								</select> 
+							</li>
+							<li>
+								<div class="search-header">
+									Degrees Verified
+								</div>
+								Contains
+								<select name="faculty_verified" class="styled ml30" id="faculty_verified">
+										<option value="">Select</option>
+										<option value="Yes">Yes</option>
+										<option value="No">No</option>										
+										<option value="Pending">Pending</option>											
+								</select> 
+							</li>
+							<li>
+								<div class="search-header">
+									Faculty Status
+								</div>
+								Contains
+								<select name="faculty_status" class="styled ml30" id="faculty_status">
+									<option value="">Select</option>
+									<option value="Yes">Yes</option>
+									<option value="No">No</option>									
+								</select> 
+							</li>
+							<li>
+								<div class="search-header">
+									Academic Rank
+								</div>
+								Is
+								<select name="faculty_rank" class="styled ml30" id="faculty_rank">
+									<option value="">Select</option>
+								</select> 
+							</li>
+							<li>
+								<div class="search-header">
+									Employment Level
+								</div>
+								Is
+								<select name="faculty_level" class="styled ml30" id="faculty_level">
+									<option value="">Select</option>
+								</select> 
+							</li>
+							<li>
+								<button href="#" id="search_go"><img src="images/content/search-go.png" alt=""/></button>
+							</li>
+						</ul>
+					</form>						
+	
+			</div>	
+ 			<div class="subTop">
+				<span class="subTop-title">Verify Profiles</span>
+			</div>   
+    <!-- Main content -->
+        <div id="pin-view">
+			<ul id="dashboard_panel_credentials" class="dashboard_pins">
+			</ul>
+        </div>		
+        <div id="list-view" style="display:none">
+          <div class="wrapper ml0 mr0">
+		  <div class="formRow mt0">
+          <div class="widget check verifyListTable">
+                <div class="whead"></div>
+						<table cellpadding="0" cellspacing="0" width="100%" class="tBlue" id="document_table">
+								<thead>
+									   <tr>
+												<td class="sortCol"><div>Last Name<span></span></div></td>
+												<td class="sortCol"><div>First Name<span></span></div></td>
+												<td class="sortCol"><div>Degree<span></span></div></td> 
+												<td class="sortCol"><div>Terminal<span></span></div></td>                            
+												<td class="sortCol"><div>Department<span></span></div></td>  
+												<td class="sortCol"><div>Division<span></span></div></td>  
+												<td class="sortCol"><div>Campus<span></span></div></td>  
+												<td class="sortCol"><div>Status<span></span></div></td>
+												<td class="sortCol"><div>Level<span></span></div></td>
+												<td class="sortCol"><div>Verified<span></span></div></td>
+												<td class="sortCol"><div>Documents<span></span></div></td>
+												<td class="sortCol"><div>Aligned<span></span></div></td>
+										</tr>
+										 </thead>
+										
+										<tbody>
+										   <!-- here comes the data -->									
+					 
+										</tbody>
+						</table>
+								
+ 
+            </div>
+          </div>
+		  </div>
+
+        
+        </div>
+        <script type="text/javascript">
+			$(document).ready(function(){
+				getVerifyDashboard('0');
+			});
+		</script>
+		<div class="verify_add_more">
+			<a href="settings.html#tabs-users" target="_top" class="blue_plus_square mt30" title="Add More"></a>
+		</div>		
+</div>
+</div>
+
+
+
+</body>
+</html>

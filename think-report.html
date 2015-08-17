@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="masterTemplate" content="/masters/master-template.html">
+<title>PerformanceCloud by Weave</title>
+<script type="text/javascript" src="js/ferre/ferre_custom.js"></script>
+<!--<link href="css/styles.css" rel="stylesheet" type="text/css" />-->
+<link href="css/ferre_styles.css" rel="stylesheet" type="text/css" />
+<link href="css/ferre_custom.css" rel="stylesheet" type="text/css" />
+<link href="css/redactor.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.dropdown.css" type="text/css" rel="stylesheet"  />
+<link rel="stylesheet" href="css/hcolumns.css" type="text/css">
+<!--[if IE]> <link href="css/ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+<!--[if IE]> <link href="css/ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.orderBars.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.sortable.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.resizable.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.uniform.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.autotab.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.select2.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.ibutton.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine.js"></script>
+
+<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.validate.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fileTree.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.sourcerer.js"></script>
+
+<script type="text/javascript" src="js/plugins/others/jquery.fullcalendar.js"></script>
+<script type="text/javascript" src="js/plugins/others/jquery.elfinder.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="js/files/bootstrap.js"></script>
+<script type="text/javascript" src="js/files/functions.js"></script>
+
+<script type="text/javascript">
+
+function showpin()
+
+{
+
+document.getElementById("pin-view").style.display = 'block';
+document.getElementById("list-view").style.display = 'none';
+
+}
+function showtable()
+
+{
+
+document.getElementById("pin-view").style.display = 'none';
+document.getElementById("list-view").style.display = 'block';
+
+}
+
+
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.tipN').fancybox({
+			scrolling: 'no',
+			padding: 10,
+			autoDimensions: true
+		});
+	});
+</script>
+
+
+</head>
+
+<body>
+<!-- Content begins -->
+<div id="content" style="visibility:hidden;">
+<div class="fixed_width">
+<div class="formRow no-print">
+			<div class="grid12">
+				<div id="editLockMember" class="floatL" style="display:none;"></div>
+				<a class="buttonB bBlue floatR mt15 ml20 mr5"  id="printReport" title="Print Report" href="#"><span data-icon="&#xe1f3;" class="iconb fontI16"></span></a>
+				<div class="doc_tool_tip floatR mt20 " style="display:none;"><img src="images/content/info-555.png" class="ml20" alt="" id="docCoverImage"/><div class="meta_info"></div><div class="doc_status mt10"></div></div>
+			</div>
+		</div>
+           <div class="pageTop">
+			    <span class="header-box-left">
+					<ul id="header-box-left-nav">
+						<li><span class="buttonL bGold" id="projectStatus"></span></li>						
+						<li><span class="app_title lh40" id="projectName"></span></li>
+					</ul>
+			    </span>
+                <span class="header-box-right">
+					<ul id="header-box-right-nav">
+						<li>
+							<a class="buttonL bBlue floatR" id="restoreBtn" title="Restore" href="#"  style="display:none;">Restore</a>
+							<a href="think-edit.html?pcRequestKey=" class="buttonL bBlue floatR mr5" id="reportEdit" name="Edit">Edit</a>
+						</li>						
+					</ul>
+			    </span>				
+			</div>	
+			<div class="subTop mb20">
+				<span class="subTop-title">Reporting Period</span>
+				<ul id="reporting_periods_dates" class="floatR" style="margin-top:-10px;">
+					<li><span class="buttonL bBlue floatR" id="reportingPeriodName"></span></li>
+				</ul>		
+			</div>
+		<div class="formRow mt10">
+			<div class="formRow">
+				<h2 class="blue_header20">Mission/Purpose</h2>
+				<p id="projectMission"></p>
+			</div>					
+			<div class="formRow">
+				<div class="grey_box_b">
+					<h2 class="blue_header20">Vision</h2>
+					<p id="projectVision"></p>
+				</div>	
+			</div>	
+			<div class="formRow fluid mt10" id="thinkSupportedInitiativesWrapper">
+				<!-- Supported Initiatives Come Here -->
+			</div>	
+			<div id="projectSectionList"></div>			
+			<div class="includeRelatedProjects relatedProjects_module">			
+				<!-- Here come the projects -->											
+			</div>				
+			<div class="thin-divider"></div>
+			<div class="collaborator_module"><!-- Collaborators Data Comes Here --></div>
+			<div class="attachments_module">
+				<!-- Here come the attachments -->												
+			</div>			
+			<div class="thin-divider"></div>	
+			<div class="formRow comments_module">
+				<!-- Comment Data Comes Here -->
+			</div>	
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		getThinkReportPage(getParameterByName('pcRequestKey'));
+	});
+</script>
+		
+</div>
+</div>
+<!-- Content ends -->
+
+
+</body>
+</html>

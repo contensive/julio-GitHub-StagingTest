@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="masterTemplate" content="/masters/master-template.html">
+<title>PerformanceCloud by Weave</title>
+<link href="js/plugins/colorpicker/jquery.colorpicker.css" rel="stylesheet" type="text/css"/>
+<!--<link href="css/styles.css" rel="stylesheet" type="text/css" />-->
+<link href="css/ferre_styles.css" rel="stylesheet" type="text/css" />
+<link href="css/ferre_custom.css" rel="stylesheet" type="text/css" />
+<link href="css/redactor.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.dropdown.css" type="text/css" rel="stylesheet"  />
+<link href="js/ferre/contextMenu/jquery.contextMenu.css" rel="stylesheet" type="text/css">
+<link href="js/ferre/treeview/skin-lion/ui.fancytree.css" rel="stylesheet" type="text/css">
+<!--[if IE]> <link href="css/ie.css" rel="stylesheet" type="text/css"> <![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<!--Color Picker Entry-->
+<script src="js/plugins/colorpicker/jquery.colorpicker.js"></script>
+<script src="js/plugins/colorpicker/i18n/jquery.ui.colorpicker-nl.js"></script>
+<script src="js/plugins/colorpicker/swatches/jquery.ui.colorpicker-pantone.js"></script>
+<script src="js/plugins/colorpicker/parts/jquery.ui.colorpicker-rgbslider.js"></script>
+<script src="js/plugins/colorpicker/parts/jquery.ui.colorpicker-memory.js"></script>
+<script src="js/plugins/colorpicker/parsers/jquery.ui.colorpicker-cmyk-parser.js"></script>
+<script src="js/plugins/colorpicker/parsers/jquery.ui.colorpicker-cmyk-percentage-parser.js"></script>
+<!--Color Entry Ends-->
+
+<script type="text/javascript" src="js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.orderBars.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.flot.resize.js"></script>
+<script type="text/javascript" src="js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="js/plugins/tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.sortable.js"></script>
+<script type="text/javascript" src="js/plugins/tables/jquery.resizable.js"></script>
+
+<script type="text/javascript" src="js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.uniform.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.autotab.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.select2.min.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.ibutton.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.validationEngine.js"></script>
+
+<script type="text/javascript" src="js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.queue.js"></script>
+<script type="text/javascript" src="js/plugins/uploader/jquery.plupload.weavequeue.js"></script>
+
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.validate.js"></script>
+<script type="text/javascript" src="js/plugins/wizards/jquery.form.js"></script>
+
+<script type="text/javascript" src="js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.fileTree.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.sourcerer.js"></script>
+<script type="text/javascript" src="js/plugins/others/jquery.pages.js"></script>
+<script type="text/javascript" src="js/plugins/others/jquery.fullcalendar.js"></script>
+<script type="text/javascript" src="js/plugins/others/jquery.elfinder.js"></script>
+<script type="text/javascript" src="js/plugins/others/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/plugins/forms/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="js/files/jquery.fileUpload.js"></script>
+<script type="text/javascript" src="js/files/bootstrap.js"></script>
+<script type="text/javascript" src="js/files/functions.js"></script>
+<script type="text/javascript" src="js/ferre/redactor.min.js"></script>
+<script type="text/javascript" src="js/ferre/jquery.pagination.js"></script>
+<script type="text/javascript" src="js/ferre/sessionstorage.min.js"></script>
+<script type="text/javascript" src="js/ferre/ferre_custom.js"></script>
+<script type="text/javascript" src="js/ferre/contextMenu/jquery.ui.position.js"></script>
+<script type="text/javascript" src="js/ferre/contextMenu/jquery.contextMenu.js"></script>
+<script type="text/javascript" src="js/ferre/jquery.dropdown.js"></script>
+<script type="text/javascript" src="js/ferre/jquery.tinysort.min.js"></script>
+<script type="text/javascript" src="js/ferre/treeview/jquery.fancytree.js"></script>
+<script type="text/javascript" src="js/ferre/treeview/jquery.fancytree.table.js"></script>
+<script type="text/javascript" src="js/ferre/treeview/jquery.fancytree.columnview.js"></script>
+<script type="text/javascript" src="js/ferre/treeview/jquery.fancytree.menu.js"></script>
+<script type="text/javascript" src="js/ferre/backoffice.js"></script>
+<script type="text/javascript" src="js/ferre/backoffice2.js"></script>
+
+<script type="text/javascript">
+
+function showpin()
+
+{
+
+document.getElementById("pin-view").style.display = 'block';
+document.getElementById("list-view").style.display = 'none';
+
+}
+function showtable()
+
+{
+
+document.getElementById("pin-view").style.display = 'none';
+document.getElementById("list-view").style.display = 'block';
+
+}
+
+
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.tipN').fancybox({
+			scrolling: 'no',
+			padding: 10,
+			autoDimensions: true,
+			onCleanup:function(){ //reset forms
+                $('#fancybox-wrap').find('form input[type="text"],form input[type="checkbox"],form input[type="hidden"], form input[type="password"], form input[type="radio"], form textarea').val('');
+                $('#fancybox-wrap').find('form select').prop('selectedIndex',0).change();
+            }
+		});
+	});
+</script>
+
+
+</head>
+
+<body>
+<!-- Top line begins -->
+<div id="admin_top">
+	<div class="fixed_width">
+		<ul class="admin_meta_nav">
+			<li><img src="images/content/cloud-logo.png" alt="" /></li>
+			<!--
+			<li>Master Administration</li>
+			<li id="masterAdmin"></li>
+			<li class="greenText">Logout</li>
+			-->
+		</ul>
+    	<div class="institution_select">
+				<div class="formRow fluid">
+						<div class="grid4 mt5 whiteText">Select Institution</div>
+						<div class="grid8"><select class="styled" id="institution_select" ></select></div>
+				</div>		
+		</div>
+	</div>
+</div>
+
+<div id="top">
+	<div class="fixed_width">
+		<div id="nav_holder">
+
+				<div class="mainNav">
+					<!-- Main nav -->
+
+					 <ul class="nav">
+						<li><a id="dashboard_tab" href="dashboard.html" title="Dashboard"><span>Dashboard</span></a> </li>
+						<li><a id="effect_tab" href="effect.html" title="Assessment"><span>Assessment</span></a> </li>
+						<li><a id="affirm_tab" href="affirm.html" title="Accreditation"><span>Accreditation</span></a></li>
+						<li><a id="verify_tab" href="verify.html" title="Credentials"><span>Credentials</span></a></li>
+						<li><a id="align_tab" href="align.html" title="Mapping" ><span>Mapping</span></a></li>            
+						<li><a id="enhance_tab" href="enhance.html" title="Planning"><span>Planning</span></a></li>
+						<li><a id="reflect_tab" href="reflect.html" title="Review"><span>Review</span></a></li>					
+					</ul>
+				</div>
+			   <img src="images/content/cloud-logo.png" alt="" class="cloud-logo"/>
+			   <div class="user">
+			        
+					<div class="profile_options">
+						<ul>
+						 <li><span id="FullName"><!-- Data comes Here --></span></li>
+						  <li><a href="#" title="" class="sProfile" id="logoutLink">Logout</a></li>
+						</ul>
+					</div>
+
+				</div>
+		</div>
+	</div>
+</div>
+
+<!-- Top line ends -->
+<div id="submenu" class="accent-color" >
+	<div class="formRow fluid">
+		<div class="fixed_width" class="clearfix">
+				<div class="subNav" style="display:none;">
+					<!-- Main nav -->
+					 <ul class="nav">
+						<li><a href="#" title="Research"><span>Work Space</span></a></li>
+						<li><a href="p" title="Portfolio"><span>Projects</span></a></li>
+                        <li><a href="report.html" title="Report"><span>Reports</span></a></li>						
+					</ul>
+				</div>
+				<ul class="top-nav-icons">
+					<li><a href="document.html" class="documentLink"></a></li>
+					<li><a href="report.html" class="reportLink"></a></li>
+					<li><a href="projects.html" class="workLink"></a></li>
+					<li><a href="settings.html" class="profileLink"></a></li>
+				</ul>
+		</div>
+	</div>
+</div>
+
+		<!-- Content begins -->
+<div id="content">
+<div class="fixed_width">
+    <!-- Main content -->
+
+		<div class="formRow">
+			<div id="tab_container" class="user_guide">
+				<div id="tabs">
+					<ul id="settings_nav">
+						<li class="set_nav_title">User Guide</li>
+						<!--<li><a href="#tabs-dash">Settings Dashboard</a></li>-->
+					</ul>
+					<!--<div id="tabs-dash">
+						<div class="formRow">
+							<h2 class="section_header">Settings</h2>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+$(function() {
+	getUserGuide();
+});
+</script>
+<div Style="display:none">
+ <div id="modal_popup_form" class="lightboxpage" >
+	
+	<!---FORM GOES HERE--->
+	
+ </div>
+</div>
+</div>
+<!-- Content ends -->
+<!-- Footer Begins--->
+<footer class="mt40 floatL">
+	<div class="sub_footer">
+		<div class="fixed_width">
+			<div class="footer_announcements">
+				<h4>Announcements</h4>
+				<p>We will be having a special professional development seminar on Friday July 15, 2014. We invite all to attend. We will be serving lunch and will be featuring a special guest. Dr. Ray VanDyke from Weave will be presenting the conference.</p>
+			</div>
+			<div class="footer_updates">
+				<h4>Updates</h4>
+				<p>The following applications will be undergoing a system update on March 15th, 2014 between the hours of 12:00am and 12:15pm. Verify, Documents, Assessments.</p>
+			</div>	
+			<div class="footer_resources">
+				<h4>Resources</h4>
+				<ul>
+					<li><a href="#">My Dashboard</a></li>
+					<li><a href="#">Resources</a></li>			
+				</ul>		
+			</div>
+		
+		</div>	
+	</div>
+	
+	<div class="footer_branding">
+		<div class="fixed_width">
+			<div class="footer_brand"></div>
+			<div class="footer_admin">
+				<div class="admin_row" id="">PerformanceCloud Administrator</div>
+				<div class="admin_row" id="pcAdminNameRow"></div>
+				<div class="admin_row" id="pcAdminPhoneRow"></div>
+				<div class="admin_row" id="pcAdminEmailRow"></div>
+			</div>	
+			<div class="footer_related_websites">
+				<h4>Related Websites</h4>
+				<ul id="related_websites_list"></ul>		
+			</div>
+		
+		</div>	
+	</div>
+	
+	<div class="footer_copyright">
+	
+		<div class="fixed_width">
+		<p>© 2014 The <span id="instName"></span>  |  All content and data is protected by international copyright law.  ALL RIGHTS RESERVED</p>
+		</div>
+
+	</div>	
+	<div class="footer_copyright_cloud">
+	
+		<div class="fixed_width">
+		<img src="images/content/cloud-logo.png">
+		<p>© 2014 Centreiva LLC. PerformanceCloud and All PerformanceCloud Technology is protected by US and International Copyright Law. ALL RIGHTS RESERVED</p>
+		</div>
+
+	</div>
+</footer>
+</body>
+</html>
